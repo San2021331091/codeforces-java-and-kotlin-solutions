@@ -5,7 +5,7 @@ private fun String.subStr(pos: Int, len: Int): String {
     val end = (pos + len).coerceAtMost(this.length)
     return this.substring(pos, end)
 }
-private val String.nPos: Int get() = -1
+
 
 fun main() {
 
@@ -20,7 +20,7 @@ fun main() {
             continue
         }
         val midPos = s.indexOf(prefix,1)
-        if (midPos == s.nPos || midPos >= (s.length - p)){
+        if (midPos == -1 || midPos >= (s.length - p)){
             continue
         }
         ans = prefix
