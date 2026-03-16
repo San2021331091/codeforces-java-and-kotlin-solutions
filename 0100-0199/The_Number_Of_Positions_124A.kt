@@ -5,6 +5,7 @@ import java.io.PrintWriter
 private fun interface Solver{
     fun solve(p:Int,q:Int,r: Int):Int
 }
+
 private class NumberPositions{
     companion object{
         fun makeSolutions(n: Int, a: Int, b: Int): Int{
