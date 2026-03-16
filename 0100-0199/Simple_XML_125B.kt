@@ -1,7 +1,7 @@
 import java.io.BufferedOutputStream
 import java.io.PrintWriter
 
-fun String.subStr(pos: Int, len: Int): String {
+private fun String.subStr(pos: Int, len: Int): String {
     val end = (pos + len).coerceAtMost(this.length)
     return this.substring(pos, end)
 }
