@@ -7,8 +7,6 @@ fun main() {
 
     val s = reader.readLine()
     val n = s.length
-
-    // Build LPS array
     val lps = IntArray(n)
     var j = 0
 
@@ -23,8 +21,6 @@ fun main() {
     }
 
     var len = lps[n - 1]
-
-    // Try to find valid border
     while (len > 0) {
         for (i in 0 until n - 1) {
             if (lps[i] == len) {
