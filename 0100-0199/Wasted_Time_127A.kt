@@ -14,7 +14,8 @@ fun main() {
     {
         val (newX,newY) = reader.readLine().split("\\s+".toRegex()).map { it.toInt() }
         distance += sqrt(((newX - oldX)*(newX - oldX) + (newY - oldY)*(newY - oldY)).toDouble());
-        oldX = newX; oldY = newY
+        oldX = newX
+        oldY = newY
     }
 
     writer.println("%.9f".format(numPapers * distance / speed))
