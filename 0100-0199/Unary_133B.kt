@@ -1,6 +1,6 @@
 import java.util.TreeMap
 
-fun <T,F> treeMapOf(): TreeMap<T,F>{
+private fun <T,F> treeMapOf(): TreeMap<T,F>{
     return TreeMap<T,F>()
 }
 fun main() {
